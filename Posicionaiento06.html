@@ -6,10 +6,79 @@
     <meta name="author" content="Antonio Javier Garcia Corro">
     <title>Posicionamiento 06</title>
 <style>
-    
+    *{
+        
+        margin: 0;
+    }
+
+    div.foto {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    header{
+        background-color: rgb(116, 158, 154);
+        text-align: center;
+        color: white;
+        position: sticky; /*obligatorio*/
+        height: 5%;
+        font-size: 300%;
+    }
+
+    .texto{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .frigo{
+        top: 20%;
+        left: 15%;
+    }
+
+    div.boton{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgb(48, 82, 78);
+        color: white;
+    }
+
+
 </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Cocina</h1>
+    </header>
+    <main>
+    <div class="foto">
+        <img src="./dibujo-dibujos-animados-cocina-refrigerador-verde-frigorifico-verde_1025542-67609.avif">
+        <div class="texto frigo">
+            <p>Frigorífico</p>
+        </div>
+        <div class="texto">
+            <p>Cajón</p>
+        </div>
+        <div class="texto">
+            <p>Horno</p>
+        </div>
+        <div class="texto">
+            <p>Campana</p>
+        </div>
+    </div>
+<!--Contenido adiccional -->
+    <div class="adiccional">
+        <h2>Detalles de los electrodomésticos</h2>
+        <p></p>
+    </div>
+<!-- Boton fijo para volver a la página principal (fixed)-->
+    <button class="boton">Volver </button>
+    </main>
 </body>
 </html>
